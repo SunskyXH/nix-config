@@ -86,6 +86,7 @@
      firefox
      wget
      git
+     gh
      curl
      font-awesome
   ];
