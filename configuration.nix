@@ -83,6 +83,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
      emacs
+     helix
      firefox
      wget
      git
