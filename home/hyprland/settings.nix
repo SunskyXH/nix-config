@@ -16,6 +16,22 @@ in {
       "dunst"
     ];
 
+    env = [
+      "NIXOS_OZONE_WL, 1"
+      "NIXPKGS_ALLOW_UNFREE, 1"
+      "XDG_CURRENT_DESKTOP, Hyprland"
+      "XDG_SESSION_DESKTOP, Hyprland"
+      "XDG_SESSION_TYPE, wayland"
+      "GDK_BACKEND, wayland"
+      "CLUTTER_BACKEND, wayland"
+
+      # NVIDIA Env
+      "LIBVA_DRIVER_NAME, nvidia"
+      "GBM_BACKEND, nvidia-drm"
+      "__GLX_VENDOR_LIBRARY_NAME, nvidia"
+      "WLR_NO_HARDWARE_CURSORS, 1"
+    ];
+
     input = {
       kb_layout = "us";
       follow_mouse = 1;
