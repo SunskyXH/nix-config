@@ -31,6 +31,7 @@
     eza # A modern replacement for `ls'
     fzf # A command-line fuzzy finder
     tree
+    bat
 
     #misc
     which
@@ -39,8 +40,19 @@
     # monitor
     btop  # replacement of htop/nmon
 
+    # dev
+    cargo
+    rustc
+    rust-analyzer
+    rustfmt
+    clippy
+        
     # nix related
     nixfmt
+  ];
+
+  home.sessionPath = [
+    "$HOME/.config/emacs/bin"
   ];
 
   # This value determines the Home Manager release that your
